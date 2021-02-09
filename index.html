@@ -10,34 +10,22 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <button class="page-header__button" type="button">
-        <img src="img/header-burger.svg" alt="burger" class="page-header__burger">
-      </button>
+      <button class="page-header__button page-header__button-burger" type="button"></button>
 
       <div class="page-header__vertical-line page-header__vertical-line--resolution--768" hidden></div>
 
       <div class="page-header__logo">
-        <img src="img/logo.png" alt="logo-cps" class="page-header__logo-img">
+        <a class="page-header__logo page-header__logo-img" href="index.html"></a>
       </div>
 
-      <button class="page-header__button page-header__button--resolution--768" type="button" hidden>
-        <img src="img/call.svg" alt="call" class="page-header__call">
-      </button>
-      <button class="page-header__button page-header__button--resolution--768" type="button" hidden>
-        <img src="img/chat.svg" alt="chat" class="page-header__chat">
-      </button>
-      <button class="page-header__button page-header__button--resolution--768" type="button" hidden>
-        <img src="img/profile.svg" alt="profile" class="page-header__profile">
-      </button>
+      <button class="page-header__button page-header__button-call page-header__button--resolution--768" type="button" hidden></button>
+      <button class="page-header__button page-header__button-chat page-header__button--resolution--768" type="button" hidden></button>
+      <button class="page-header__button page-header__button-profile page-header__button--resolution--768" type="button" hidden></button>
 
       <div class="page-header__vertical-line"></div>
       
-      <button class="page-header__button" type="button">
-        <img src="img/request.svg" alt="request" class="page-header__request">
-      </button>
-      <button class="page-header__button" type="button">
-        <img src="img/checkstatus.svg" alt="checkstatus" class="page-header__checkstatus">
-      </button>
+      <button class="page-header__button page-header__button-request" type="button"></button>
+      <button class="page-header__button page-header__button-checkstatus" type="button"></button>
     </header>
 
     <section class="section">
@@ -48,18 +36,14 @@
         
         <div class="section__header-buttons" hidden>
           <p class="section__header-text">Оставить заявку</p>
-          <button class="page-header__button" type="button">
-            <img src="img/request.svg" alt="request" class="page-header__request">
-          </button>
+          <button class="page-header__button page-header__button-request" type="button"></button>
           <p class="section__header-text">Статус ремонта</p>
-          <button class="page-header__button" type="button">
-            <img src="img/checkstatus.svg" alt="checkstatus" class="page-header__checkstatus">
-          </button>
+          <button class="page-header__button page-header__button-checkstatus" type="button"></button>
         </div>
       </div>
 
       <div class="section__services">
-        <button class="section__service section__service--selected--true" type="button"><p class="section__text section__text">Ремонтируемые бренды</p></button>
+        <button class="section__service section__service--selected--true" type="button"><p class="section__text">Ремонтируемые бренды</p></button>
         <button class="section__service section__service--selected--false" type="button"><p class="section__text">Ремонтируемые устройства</p></button>
         <button class="section__service section__service--selected--false" type="button"><p class="section__text">Цены на услуги</p></button>
         <button class="section__service section__service--selected--false" type="button"><p class="section__text">Адреса сервисных центров</p></button>

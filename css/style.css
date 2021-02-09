@@ -28,11 +28,25 @@ html {
   align-items: center;
 
   width: 288px;
-  height: 88px;
+  height: 87px;
+
+  border-bottom: 1px solid #d9fff5;
 }
 
 .page-header__logo {
-  height: 50px;
+  height: 51px;
+  width: 97px;
+  background-image: url("../img/logo.png");
+  background-size: 97px 51px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.page-header__logo-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .page-header__button {
@@ -44,6 +58,42 @@ html {
 
   border: none;
   background: none;
+}
+
+.page-header__button-burger {
+  background-image: url("../img/header-burger.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.page-header__button-call {
+  background-image: url("../img/call.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.page-header__button-chat {
+  background-image: url("../img/chat.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.page-header__button-profile {
+  background-image: url("../img/profile.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.page-header__button-request {
+  background-image: url("../img/request.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.page-header__button-checkstatus {
+  background-image: url("../img/checkstatus.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
 }
 
 .page-header__vertical-line {
@@ -303,6 +353,7 @@ html {
     font-family: "TT Lakes";
     font-size: 16px;
     line-height: 24px;
+    font-weight: 500;
   }
 
   .section__services {
@@ -312,6 +363,10 @@ html {
 
   .section__service--selected--false {
     margin-right: 10px;
+  }
+
+  .section__text {
+    font-weight: 500;
   }
 
   .section__content {
