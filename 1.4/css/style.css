@@ -46,6 +46,10 @@ html {
   cursor: pointer;
 }
 
+.menu-header__logo-item:hover {
+  opacity: 0.7;
+}
+
 .menu-header__button {
   margin-right: 0;
   padding: 0;
@@ -188,6 +192,10 @@ html {
   cursor: pointer;
 }
 
+.menu-contacts__email-item:hover {
+  opacity: 0.7;
+}
+
 .menu-contacts__phone {
   margin: 12px 0 0 16px;
 }
@@ -201,6 +209,10 @@ html {
   font-weight: bold;
   color: #1b1c21;
   cursor: pointer;
+}
+
+.menu-contacts__phone-item:hover {
+  opacity: 0.7;
 }
 
 .menu-lang {
