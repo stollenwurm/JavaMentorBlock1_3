@@ -13,7 +13,7 @@ html {
   box-shadow: 
       -2px 0px 4px rgba(69, 79, 126, 0.02), 
       16px 0px 52px rgba(14, 24, 80, 0.2);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -30,16 +30,20 @@ html {
 }
 
 .menu-header__logo {
+  margin-left: 16px;
+  margin-right: 78px;
+}
+
+.menu-header__logo-item {
+  display: block;
   height: 51px;
   width: 97px;
 
-  flex-grow: 1;
   background-image: url("../img/logo.png");
   background-size: 97px 51px;
   background-repeat: no-repeat;
   
-  position: relative;
-  left: 16px;
+  cursor: pointer;
 }
 
 .menu-header__button {
@@ -51,6 +55,7 @@ html {
 
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .menu-header__button-close {
@@ -70,15 +75,19 @@ html {
 }
 
 .menu-nav {
-  position: relative;
+  height: 466px;
+}
+
+.menu-nav__item-container {
+  padding-left: 24px;
   padding-top: 32px;
+  
+  position: relative;
 }
 
 .menu-nav__item {
-  margin-top: 32px;
   margin-right: auto;
   display: block;
-  padding-left: 24px;
   text-decoration: none;
   font-family: "TT Lakes";
   font-weight: 500;
@@ -90,10 +99,6 @@ html {
   color: #1b1c21;
 }
 
-.menu-nav__item:first-child {
-  margin: 0;
-}
-
 .menu-nav__item:hover {
   color: #7e7e82;
 }
@@ -103,6 +108,20 @@ html {
 }
 
 .menu-nav__item--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28px;
+
+  margin: auto;
+
+  height: 32px;
+
+  border-right: 4px solid #41f6d7;
+  border-radius: 4px;
+}
+
+.menu-nav__item:hover::before {
   content: "";
   position: absolute;
   left: 0;
@@ -130,6 +149,11 @@ html {
 
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+.menu-footer__button:hover {
+  opacity: 0.7;
 }
 
 .menu-footer__button-call {
@@ -150,23 +174,33 @@ html {
   background-repeat: no-repeat;
 }
 
-.menu-contacts-email {
+.menu-contacts__email {
   margin: 16px 0 0 16px;
+}
+
+.menu-contacts__email-item {
+  text-decoration: none;
   font-family: "TT Lakes";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
+  cursor: pointer;
 }
 
-.menu-contacts-phone {
+.menu-contacts__phone {
   margin: 12px 0 0 16px;
+}
+
+.menu-contacts__phone-item {
+  text-decoration: none;
   font-family: "TT Lakes";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
   font-weight: bold;
   color: #1b1c21;
+  cursor: pointer;
 }
 
 .menu-lang {
@@ -186,6 +220,7 @@ html {
   margin-right: 7px;
 
   color: #1b1c21;
+  cursor: pointer;
 }
 
 .menu-lang__button:hover {
