@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'TT Lakes', sans-serif;
+}
+
+.brands {
+  width: 320px;
+  height: 233px;
+
+  border-top: 1px solid #d9fff5;
+}
+
+.brands::before {
+  content: "";
+  position: absolute;
+  left: 317px;
+  width: 4px;
+  height: 233px;
+
+  box-shadow: -3px 0 10px 4px #fff;;
+  background: #fff;
+  z-index: 100;
+}
+
+.brands-header {
+  padding: 16px;
+  width: 288px;
+  height: 48px;
+
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.brands-header__text {
+  font-family: "TT Lakes";
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+
+  color: #7e7e82;
+}
+
+.brands-items {
+  height: 154px;
+
+  background: #f8f8f8;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-wrapper {
+  width: 208px;
+} */
+
+.brands-items__item {
+  margin: 16px 0;
+  margin-left: 16px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16px;
+
+  width: 204px !important;
+  height: 70px;
+
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+
+.brands-items__item-lenovo {
+  width: 108px;
+  height: 32px;
+
+  background-image: url("../img/lenovo.png");
+}
+.brands-items__item-samsung {
+  width: 116px;
+  height: 39px;
+
+  background-image: url("../img/samsung.png");
+}
+
+.brands-items__item-apple {
+  width: 44px;
+  height: 44px;
+
+  background-image: url("../img/apple.png");
+}
+
+.brands-items__item-bosch {
+  width: 128px;
+  height: 29px;
+
+  background-image: url("../img/bosch.png");
+}
+
+.brands-items__item-hp {
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/hp.png");
+}
+
+.brands-items__item-acer {
+  width: 94px;
+  height: 24px;
+
+  background-image: url("../img/acer.png");
+}
+
+.brands-items__item-sonic {
+  width: 128px;
+  height: 21px;
+
+  background-image: url("../img/sonic.png");
+}
+
+.brands-items__item-sony {
+  width: 128px;
+  height: 25px;
+
+  background-image: url("../img/sony.png");
+}
+
+.brands-items__item-arrow {
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../img/arrow.svg");
+}
+
+.swiper-pagination {
+  top: 104px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  margin: 0 6px;
+
+  background: #bbb;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .brands {
+    width: 768px;
+    height: 321px;
+  }
+
+  .brands--b {
+    height: 400px;
+  }
+  
+  .brands::before {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+  
+  .brands-header {
+    padding-left: 24px;
+    height: 24px;
+  }
+  
+  .brands-header__text {
+    width: 338px;
+  }
+  
+  .brands-items {
+    height: 265px;
+  }
+
+  .brands-items--b {
+    height: 344px;
+  }
+
+  .swiper-wrapper {
+    height: 184px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .brands-items__item {
+    margin: 0 0 16px 24px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 190px !important;
+  }
+  
+  .swiper-container {
+    padding-top: 24px;
+    height: 160px;
+  }
+
+  .swiper-container--b {
+    height: 248px;
+  }
+  
+  .section__button-container {
+    display: block;
+    margin-left: 32px;
+    margin-top: 24px;
+    width: 133px;
+  }
+  
+  .section__button {
+    display: flex;
+    align-items: center;
+  
+    height: 24px;
+  
+    border: none;
+    background: none;
+  }
+  
+  .section__button-icon {
+    padding-right: 17px;
+  }
+  
+  .section__button-text {
+    width: 101px;
+    height: 24px;
+  
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+
+    color: #1b1c21;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brands {
+    width: 1120px;
+  }
+
+  .brands--b {
+    height: 412px;
+  }
+  
+  .brands-header {
+    padding-left: 32px;
+  }
+
+  .brands-items--b {
+    height: 356px;
+  }
+  
+  .brands-items__item {
+    margin: 0 0 16px 32px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 208px !important;
+  }
+
+  .swiper-container--b {
+    margin-bottom: 46px;
+  }
+  
+  .section__button-container {
+    margin-left: 40px;
+  }
+}
