@@ -9,22 +9,11 @@ html {
 }
 
 .brands {
+  margin: 0 auto;
   width: 320px;
   height: 233px;
 
   border-top: 1px solid #d9fff5;
-}
-
-.brands::before {
-  content: "";
-  position: absolute;
-  left: 317px;
-  width: 4px;
-  height: 233px;
-
-  box-shadow: -3px 0 10px 4px #fff;;
-  background: #fff;
-  z-index: 100;
 }
 
 .brands-header {
@@ -78,6 +67,12 @@ html {
   background: #fff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
+
+  transition: scale .5s ease;
+}
+
+.brands-items__item:hover {
+  transform: scale(1.1);
 }
 
 .brands-items__item-lenovo {
@@ -237,6 +232,11 @@ html {
   
     border: none;
     background: none;
+    cursor: pointer;
+  }
+
+  .section__button:hover {
+    opacity: 0.5;
   }
   
   .section__button-icon {
